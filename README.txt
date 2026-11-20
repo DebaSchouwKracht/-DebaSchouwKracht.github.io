@@ -1,0 +1,1 @@
+Deba Schouwkracht website V3. Upload index.html, style.css, script.js en de volledige map assets naar de root van je GitHub Pages repository. Facebook en WhatsApp zijn gekoppeld. De erkenningsbadge is een eigen ontwerp, geen officieel keurmerk. Voeg uitsluitend echte, geverifieerde klantbeoordelingen toe.
