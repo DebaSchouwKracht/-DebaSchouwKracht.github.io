@@ -8,7 +8,7 @@
 
   <!-- SEO -->
   <title>Schoorsteenveger Nederland | Deba Schouwkracht</title>
-  <meta name="description" content="Schoorsteen laten vegen? Deba Schouwkracht verzorgt schoorsteenvegen inclusief veegbewijs vanaf € 74,50. Vanuit Noord-Brabant actief door heel Nederland.">
+  <meta name="description" content="Schoorsteen laten vegen? Deba Schouwkracht verzorgt schoorsteenvegen inclusief veegbewijs voor € 74,50. Vanuit Noord-Brabant actief door heel Nederland.">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="https://debaschouwkracht.nl/">
 
@@ -24,6 +24,73 @@
 
   <link rel="icon" href="assets/favicon.svg">
   <link rel="stylesheet" href="style.css">
+
+  <!-- Aanvullende opmaak voor de nieuwe paginalinks -->
+  <style>
+    .seo-service-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 14px;
+      padding: 12px 20px;
+      border: 1px solid #c9a45c;
+      border-radius: 8px;
+      color: #102b43;
+      background: #fff;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background .2s ease, color .2s ease;
+    }
+
+    .seo-service-link:hover,
+    .seo-service-link:focus-visible {
+      background: #102b43;
+      color: #fff;
+    }
+
+    .seo-hero-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 16px;
+      padding: 11px 18px;
+      border: 1px solid rgba(255,255,255,.75);
+      border-radius: 8px;
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background .2s ease;
+    }
+
+    .seo-hero-link:hover,
+    .seo-hero-link:focus-visible {
+      background: rgba(255,255,255,.15);
+    }
+
+    .seo-more {
+      margin-top: 18px;
+    }
+
+    .seo-more a {
+      color: #102b43;
+      font-weight: 700;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    @media (max-width: 768px) {
+      .seo-hero-link {
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      .seo-service-link {
+        width: 100%;
+        box-sizing: border-box;
+      }
+    }
+  </style>
 
   <!-- Google structured data -->
   <script type="application/ld+json">
@@ -77,14 +144,20 @@
 <div class="topline">
   <div class="container">
     Veilig stoken begint met goed onderhoud
-    <span>Bel: <a href="tel:+31659012504">06 59 01 25 04</a></span>
+    <span>
+      Bel: <a href="tel:+31659012504">06 59 01 25 04</a>
+    </span>
   </div>
 </div>
 
 <header class="header">
   <div class="container nav">
+
     <a class="brand" href="#top">
-      <img src="assets/logo.webp" alt="Deba Schouwkracht logo" width="72" height="72">
+      <img src="assets/logo.webp"
+           alt="Deba Schouwkracht logo"
+           width="72"
+           height="72">
       <span>
         <b>Deba Schouwkracht</b>
         <small>Schoorsteen & woningonderhoud</small>
@@ -92,14 +165,19 @@
     </a>
 
     <nav aria-label="Hoofdnavigatie">
+      <a href="schoorsteenvegen.html">Schoorsteenvegen</a>
       <a href="#diensten">Diensten</a>
       <a href="#prijzen">Tarieven</a>
       <a href="#contact">Contact</a>
     </nav>
 
-    <a class="btn small" href="https://wa.me/31659012504" target="_blank" rel="noopener">
+    <a class="btn small"
+       href="https://wa.me/31659012504"
+       target="_blank"
+       rel="noopener">
       Afspraak maken ↗
     </a>
+
   </div>
 </header>
 
@@ -110,6 +188,7 @@
     <div class="container hero-grid">
 
       <div class="hero-text">
+
         <span class="eyebrow light-eyebrow">
           DEBA SCHOUWKRACHT • VAKKUNDIG ONDERHOUD
         </span>
@@ -129,20 +208,32 @@
         </p>
 
         <div class="hero-actions">
-          <a class="btn" href="https://wa.me/31659012504?text=Goedendag%2C%20ik%20wil%20een%20veegbeurt%20inplannen." target="_blank" rel="noopener">
+
+          <a class="btn"
+             href="https://wa.me/31659012504?text=Goedendag%2C%20ik%20wil%20een%20veegbeurt%20inplannen."
+             target="_blank"
+             rel="noopener">
             Plan uw veegbeurt ↗
           </a>
 
           <a class="btn outline" href="#diensten">
             Bekijk alle diensten
           </a>
+
         </div>
+
+        <!-- NIEUW: zichtbare link naar de SEO-pagina -->
+        <a class="seo-hero-link"
+           href="schoorsteenvegen.html">
+          Meer over schoorsteenvegen →
+        </a>
 
         <div class="trust">
           <span>✓ Incl. veegbewijs</span>
           <span>✓ Heldere tarieven</span>
           <span>✓ Persoonlijk contact</span>
         </div>
+
       </div>
 
       <div class="hero-photo">
@@ -162,7 +253,10 @@
       <h3>Schoorsteenvegen</h3>
       <strong>€ 74,50</strong>
       <p>Inclusief veegbewijs</p>
-      <a href="https://wa.me/31659012504?text=Ik%20wil%20een%20schoorsteenveegbeurt%20aanvragen" target="_blank" rel="noopener">
+
+      <a href="https://wa.me/31659012504?text=Ik%20wil%20een%20schoorsteenveegbeurt%20aanvragen"
+         target="_blank"
+         rel="noopener">
         Afspraak aanvragen ↗
       </a>
     </div>
@@ -172,7 +266,10 @@
       <h3>Dakgoten reinigen</h3>
       <strong>€ 3,25 <small>/m</small></strong>
       <p>Vanafprijs per strekkende meter</p>
-      <a href="https://wa.me/31659012504?text=Ik%20wil%20mijn%20dakgoten%20laten%20reinigen" target="_blank" rel="noopener">
+
+      <a href="https://wa.me/31659012504?text=Ik%20wil%20mijn%20dakgoten%20laten%20reinigen"
+         target="_blank"
+         rel="noopener">
         Prijs aanvragen ↗
       </a>
     </div>
@@ -182,7 +279,10 @@
       <h3>Zonnepanelen reinigen</h3>
       <strong>€ 6,50 <small>/paneel</small></strong>
       <p>Vanafprijs per zonnepaneel</p>
-      <a href="https://wa.me/31659012504?text=Ik%20wil%20mijn%20zonnepanelen%20laten%20reinigen" target="_blank" rel="noopener">
+
+      <a href="https://wa.me/31659012504?text=Ik%20wil%20mijn%20zonnepanelen%20laten%20reinigen"
+         target="_blank"
+         rel="noopener">
         Prijs aanvragen ↗
       </a>
     </div>
@@ -197,6 +297,12 @@
       omstandigheden of extra werkzaamheden bespreken
       we vooraf.
     </p>
+
+    <p class="seo-more">
+      <a href="schoorsteenvegen.html">
+        Bekijk alle informatie over schoorsteenvegen voor € 74,50 →
+      </a>
+    </p>
   </div>
 
   <!-- DIENSTEN -->
@@ -207,7 +313,9 @@
         <span class="eyebrow">
           SCHOORSTEENVEGEN EN WONINGONDERHOUD
         </span>
+
         <h2>Onze diensten voor uw woning</h2>
+
         <p>
           Van schoorsteenvegen en camera-inspecties tot
           dakgootreiniging en zonnepanelen reinigen.
@@ -215,23 +323,41 @@
         </p>
       </div>
 
-      <div class="tabs" role="tablist" aria-label="Dienstencategorieën">
-        <button class="tab active" role="tab" aria-selected="true" data-tab="0">
+      <div class="tabs"
+           role="tablist"
+           aria-label="Dienstencategorieën">
+
+        <button class="tab active"
+                role="tab"
+                aria-selected="true"
+                data-tab="0">
           🧹 Schoorsteen & kachels
         </button>
-        <button class="tab" role="tab" aria-selected="false" data-tab="1">
+
+        <button class="tab"
+                role="tab"
+                aria-selected="false"
+                data-tab="1">
           🏠 Dak & gevel
         </button>
-        <button class="tab" role="tab" aria-selected="false" data-tab="2">
+
+        <button class="tab"
+                role="tab"
+                aria-selected="false"
+                data-tab="2">
           ✨ Reiniging & ventilatie
         </button>
+
       </div>
 
+      <!-- SCHOORSTEEN EN KACHELS -->
       <section class="category-panel" data-category="0">
+
         <div class="category-intro">
           <img src="assets/schoorsteenvegen.webp"
                alt="Professioneel schoorsteenvegen"
                loading="lazy">
+
           <div>
             <span class="eyebrow">🧹 ONZE DIENSTEN</span>
             <h3>Schoorsteen & kachels</h3>
@@ -241,10 +367,16 @@
 
         <div class="service-list">
 
-          <a class="service-line" href="https://wa.me/31659012504?text=Goedendag%20Deba%20Schouwkracht%2C%20ik%20wil%20informatie%20over%20Schoorsteenvegen.%20Mijn%20postcode%20is%3A%20" target="_blank" rel="noopener">
+          <a class="service-line"
+             href="https://wa.me/31659012504?text=Goedendag%20Deba%20Schouwkracht%2C%20ik%20wil%20informatie%20over%20Schoorsteenvegen.%20Mijn%20postcode%20is%3A%20"
+             target="_blank"
+             rel="noopener">
             <span>
               <strong>Schoorsteenvegen</strong>
-              <small>Schoorsteen professioneel reinigen, inclusief veegbewijs.</small>
+              <small>
+                Schoorsteen professioneel reinigen,
+                inclusief veegbewijs.
+              </small>
             </span>
             <span class="line-right">
               <b>€ 74,50</b>
@@ -252,7 +384,10 @@
             </span>
           </a>
 
-          <a class="service-line" href="https://wa.me/31659012504?text=Goedendag%20Deba%20Schouwkracht%2C%20ik%20wil%20informatie%20over%20Camera-inspectie.%20Mijn%20postcode%20is%3A%20" target="_blank" rel="noopener">
+          <a class="service-line"
+             href="https://wa.me/31659012504?text=Goedendag%20Deba%20Schouwkracht%2C%20ik%20wil%20informatie%20over%20Camera-inspectie.%20Mijn%20postcode%20is%3A%20"
+             target="_blank"
+             rel="noopener">
             <span>
               <strong>Camera-inspectie</strong>
               <small>Inzicht in de staat van uw rookkanaal.</small>
@@ -263,7 +398,10 @@
             </span>
           </a>
 
-          <a class="service-line" href="https://wa.me/31659012504?text=Goedendag%20Deba%20Schouwkracht%2C%20ik%20wil%20informatie%20over%20Veegbewijs.%20Mijn%20postcode%20is%3A%20" target="_blank" rel="noopener">
+          <a class="service-line"
+             href="https://wa.me/31659012504?text=Goedendag%20Deba%20Schouwkracht%2C%20ik%20wil%20informatie%20over%20Veegbewijs.%20Mijn%20postcode%20is%3A%20"
+             target="_blank"
+             rel="noopener">
             <span>
               <strong>Veegbewijs</strong>
               <small>Documentatie na de uitgevoerde veegbeurt.</small>
@@ -274,7 +412,10 @@
             </span>
           </a>
 
-          <a class="service-line" href="https://wa.me/31659012504?text=Goedendag%20Deba%20Schouwkracht%2C%20ik%20wil%20informatie%20over%20Pelletkachelonderhoud.%20Mijn%20postcode%20is%3A%20" target="_blank" rel="noopener">
+          <a class="service-line"
+             href="https://wa.me/31659012504?text=Goedendag%20Deba%20Schouwkracht%2C%20ik%20wil%20informatie%20over%20Pelletkachelonderhoud.%20Mijn%20postcode%20is%3A%20"
+             target="_blank"
+             rel="noopener">
             <span>
               <strong>Pelletkachelonderhoud</strong>
               <small>Onderhoud en reiniging van pelletkachels.</small>
@@ -285,7 +426,10 @@
             </span>
           </a>
 
-          <a class="service-line" href="https://wa.me/31659012504?text=Goedendag%20Deba%20Schouwkracht%2C%20ik%20wil%20informatie%20over%20Advies%20%26%20preventie.%20Mijn%20postcode%20is%3A%20" target="_blank" rel="noopener">
+          <a class="service-line"
+             href="https://wa.me/31659012504?text=Goedendag%20Deba%20Schouwkracht%2C%20ik%20wil%20informatie%20over%20Advies%20%26%20preventie.%20Mijn%20postcode%20is%3A%20"
+             target="_blank"
+             rel="noopener">
             <span>
               <strong>Advies & preventie</strong>
               <small>Advies over onderhoud en veilig stoken.</small>
@@ -297,13 +441,25 @@
           </a>
 
         </div>
+
+        <!-- NIEUW: interne link onder de diensten -->
+        <a class="seo-service-link"
+           href="schoorsteenvegen.html">
+          Alles over schoorsteenvegen bekijken →
+        </a>
+
       </section>
 
-      <section class="category-panel" data-category="1" hidden>
+      <!-- DAK EN GEVEL -->
+      <section class="category-panel"
+               data-category="1"
+               hidden>
+
         <div class="category-intro">
           <img src="assets/omslag.webp"
                alt="Dak- en gevelonderhoud"
                loading="lazy">
+
           <div>
             <span class="eyebrow">🏠 ONZE DIENSTEN</span>
             <h3>Dak & gevel</h3>
@@ -313,7 +469,10 @@
 
         <div class="service-list">
 
-          <a class="service-line" href="https://wa.me/31659012504?text=Goedendag%20Deba%20Schouwkracht%2C%20ik%20wil%20informatie%20over%20Dakgoten%20reinigen.%20Mijn%20postcode%20is%3A%20" target="_blank" rel="noopener">
+          <a class="service-line"
+             href="https://wa.me/31659012504?text=Goedendag%20Deba%20Schouwkracht%2C%20ik%20wil%20informatie%20over%20Dakgoten%20reinigen.%20Mijn%20postcode%20is%3A%20"
+             target="_blank"
+             rel="noopener">
             <span>
               <strong>Dakgoten reinigen</strong>
               <small>Vuil en bladeren uit dakgoten verwijderen.</small>
@@ -324,7 +483,10 @@
             </span>
           </a>
 
-          <a class="service-line" href="https://wa.me/31659012504?text=Goedendag%20Deba%20Schouwkracht%2C%20ik%20wil%20informatie%20over%20Dakwerkzaamheden.%20Mijn%20postcode%20is%3A%20" target="_blank" rel="noopener">
+          <a class="service-line"
+             href="https://wa.me/31659012504?text=Goedendag%20Deba%20Schouwkracht%2C%20ik%20wil%20informatie%20over%20Dakwerkzaamheden.%20Mijn%20postcode%20is%3A%20"
+             target="_blank"
+             rel="noopener">
             <span>
               <strong>Dakwerkzaamheden</strong>
               <small>Kleine dakwerkzaamheden en inspectie.</small>
@@ -335,7 +497,10 @@
             </span>
           </a>
 
-          <a class="service-line" href="https://wa.me/31659012504?text=Goedendag%20Deba%20Schouwkracht%2C%20ik%20wil%20informatie%20over%20Vogelpreventie.%20Mijn%20postcode%20is%3A%20" target="_blank" rel="noopener">
+          <a class="service-line"
+             href="https://wa.me/31659012504?text=Goedendag%20Deba%20Schouwkracht%2C%20ik%20wil%20informatie%20over%20Vogelpreventie.%20Mijn%20postcode%20is%3A%20"
+             target="_blank"
+             rel="noopener">
             <span>
               <strong>Vogelpreventie</strong>
               <small>Overlast en nestvorming helpen voorkomen.</small>
@@ -346,7 +511,10 @@
             </span>
           </a>
 
-          <a class="service-line" href="https://wa.me/31659012504?text=Goedendag%20Deba%20Schouwkracht%2C%20ik%20wil%20informatie%20over%20Dakkapel%20reinigen.%20Mijn%20postcode%20is%3A%20" target="_blank" rel="noopener">
+          <a class="service-line"
+             href="https://wa.me/31659012504?text=Goedendag%20Deba%20Schouwkracht%2C%20ik%20wil%20informatie%20over%20Dakkapel%20reinigen.%20Mijn%20postcode%20is%3A%20"
+             target="_blank"
+             rel="noopener">
             <span>
               <strong>Dakkapel reinigen</strong>
               <small>Buitenzijde van dakkapellen reinigen.</small>
@@ -357,7 +525,10 @@
             </span>
           </a>
 
-          <a class="service-line" href="https://wa.me/31659012504?text=Goedendag%20Deba%20Schouwkracht%2C%20ik%20wil%20informatie%20over%20Boeidelen%20reinigen.%20Mijn%20postcode%20is%3A%20" target="_blank" rel="noopener">
+          <a class="service-line"
+             href="https://wa.me/31659012504?text=Goedendag%20Deba%20Schouwkracht%2C%20ik%20wil%20informatie%20over%20Boeidelen%20reinigen.%20Mijn%20postcode%20is%3A%20"
+             target="_blank"
+             rel="noopener">
             <span>
               <strong>Boeidelen reinigen</strong>
               <small>Boeidelen en dakranden reinigen.</small>
@@ -371,11 +542,16 @@
         </div>
       </section>
 
-      <section class="category-panel" data-category="2" hidden>
+      <!-- REINIGING EN VENTILATIE -->
+      <section class="category-panel"
+               data-category="2"
+               hidden>
+
         <div class="category-intro">
           <img src="assets/advies-preventie.webp"
                alt="Reiniging en ventilatieonderhoud"
                loading="lazy">
+
           <div>
             <span class="eyebrow">✨ ONZE DIENSTEN</span>
             <h3>Reiniging & ventilatie</h3>
@@ -385,7 +561,10 @@
 
         <div class="service-list">
 
-          <a class="service-line" href="https://wa.me/31659012504?text=Goedendag%20Deba%20Schouwkracht%2C%20ik%20wil%20informatie%20over%20Zonnepanelen%20reinigen.%20Mijn%20postcode%20is%3A%20" target="_blank" rel="noopener">
+          <a class="service-line"
+             href="https://wa.me/31659012504?text=Goedendag%20Deba%20Schouwkracht%2C%20ik%20wil%20informatie%20over%20Zonnepanelen%20reinigen.%20Mijn%20postcode%20is%3A%20"
+             target="_blank"
+             rel="noopener">
             <span>
               <strong>Zonnepanelen reinigen</strong>
               <small>Zorgvuldige reiniging van zonnepanelen.</small>
@@ -396,7 +575,10 @@
             </span>
           </a>
 
-          <a class="service-line" href="https://wa.me/31659012504?text=Goedendag%20Deba%20Schouwkracht%2C%20ik%20wil%20informatie%20over%20Mechanische%20ventilatie%20reinigen.%20Mijn%20postcode%20is%3A%20" target="_blank" rel="noopener">
+          <a class="service-line"
+             href="https://wa.me/31659012504?text=Goedendag%20Deba%20Schouwkracht%2C%20ik%20wil%20informatie%20over%20Mechanische%20ventilatie%20reinigen.%20Mijn%20postcode%20is%3A%20"
+             target="_blank"
+             rel="noopener">
             <span>
               <strong>Mechanische ventilatie reinigen</strong>
               <small>Ventilatieonderdelen en -kanalen reinigen.</small>
@@ -407,7 +589,10 @@
             </span>
           </a>
 
-          <a class="service-line" href="https://wa.me/31659012504?text=Goedendag%20Deba%20Schouwkracht%2C%20ik%20wil%20informatie%20over%20Algemene%20reiniging.%20Mijn%20postcode%20is%3A%20" target="_blank" rel="noopener">
+          <a class="service-line"
+             href="https://wa.me/31659012504?text=Goedendag%20Deba%20Schouwkracht%2C%20ik%20wil%20informatie%20over%20Algemene%20reiniging.%20Mijn%20postcode%20is%3A%20"
+             target="_blank"
+             rel="noopener">
             <span>
               <strong>Algemene reiniging</strong>
               <small>Overige reinigingswerkzaamheden op aanvraag.</small>
@@ -427,16 +612,23 @@
   <!-- OVER ONS -->
   <section class="about">
     <div class="container about-grid">
+
       <div>
         <span class="eyebrow">WEES OP TIJD</span>
+
         <h2>Goed onderhoud begint met één bericht.</h2>
+
         <p>
           Een schoorsteen die regelmatig wordt onderhouden
           helpt risico's te beperken. Wij bespreken uw situatie,
           geven vooraf duidelijkheid over de prijs en plannen
           samen een geschikt moment.
         </p>
-        <a class="btn" href="https://wa.me/31659012504" target="_blank" rel="noopener">
+
+        <a class="btn"
+           href="https://wa.me/31659012504"
+           target="_blank"
+           rel="noopener">
           Vraag een afspraak aan ↗
         </a>
       </div>
@@ -444,11 +636,13 @@
       <img src="assets/camera-inspectie.webp"
            alt="Camera-inspectie van een schoorsteen"
            loading="lazy">
+
     </div>
   </section>
 
   <!-- LANDELIJK WERKGEBIED -->
   <section class="faq container" id="werkgebied">
+
     <div>
       <span class="eyebrow">LANDELIJKE SERVICE</span>
       <h2>Schoorsteenveger in heel Nederland</h2>
@@ -475,20 +669,32 @@
         mogelijkheden en plannen samen een afspraak.
       </p>
 
-      <a class="btn" href="https://wa.me/31659012504?text=Goedendag%2C%20ik%20wil%20graag%20een%20afspraak%20aanvragen.%20Mijn%20postcode%20is%3A%20" target="_blank" rel="noopener">
+      <a class="btn"
+         href="https://wa.me/31659012504?text=Goedendag%2C%20ik%20wil%20graag%20een%20afspraak%20aanvragen.%20Mijn%20postcode%20is%3A%20"
+         target="_blank"
+         rel="noopener">
         Controleer beschikbaarheid ↗
       </a>
+
+      <p class="seo-more">
+        <a href="schoorsteenvegen.html">
+          Meer informatie over onze schoorsteenveegservice →
+        </a>
+      </p>
     </div>
+
   </section>
 
   <!-- FAQ -->
   <section class="faq container">
+
     <div>
       <span class="eyebrow">VEELGESTELDE VRAGEN</span>
       <h2>Goed om te weten</h2>
     </div>
 
     <div>
+
       <details>
         <summary>Wat kost schoorsteenvegen bij Deba Schouwkracht?</summary>
         <p>
@@ -545,6 +751,7 @@
           schoorsteen en rookkanaal.
         </p>
       </details>
+
     </div>
   </section>
 
@@ -555,6 +762,7 @@
       <div>
         <span class="eyebrow light-eyebrow">CONTACT</span>
         <h2>Plan uw onderhoud eenvoudig.</h2>
+
         <p>
           Vertel ons welke dienst u nodig heeft en
           vermeld uw postcode. Wij helpen u graag verder.
@@ -562,7 +770,11 @@
       </div>
 
       <div class="contact-actions">
-        <a class="btn" href="https://wa.me/31659012504?text=Goedendag%20Deba%20Schouwkracht%2C%20ik%20wil%20een%20afspraak%20aanvragen.%0ADienst%3A%0APostcode%3A%20" target="_blank" rel="noopener">
+
+        <a class="btn"
+           href="https://wa.me/31659012504?text=Goedendag%20Deba%20Schouwkracht%2C%20ik%20wil%20een%20afspraak%20aanvragen.%0ADienst%3A%0APostcode%3A%20"
+           target="_blank"
+           rel="noopener">
           💬 Stuur een WhatsApp
         </a>
 
@@ -570,9 +782,13 @@
           Bel 06 59 01 25 04
         </a>
 
-        <a class="fb" href="https://www.facebook.com/share/1KygnqTtFA/?mibextid=wwXIfr" target="_blank" rel="noopener">
+        <a class="fb"
+           href="https://www.facebook.com/share/1KygnqTtFA/?mibextid=wwXIfr"
+           target="_blank"
+           rel="noopener">
           Bekijk onze Facebook-pagina ↗
         </a>
+
       </div>
 
     </div>
@@ -582,8 +798,12 @@
 
 <footer>
   <div class="container footer">
-    <span>© <span id="year">2026</span> Deba Schouwkracht</span>
-    <span>Alle prijzen inclusief btw en standaard voorrijkosten.</span>
+    <span>
+      © <span id="year">2026</span> Deba Schouwkracht
+    </span>
+    <span>
+      Alle prijzen inclusief btw en standaard voorrijkosten.
+    </span>
   </div>
 </footer>
 
