@@ -58,7 +58,9 @@ class BuildTest(unittest.TestCase):
                 whatsapps = [attrs["href"] for attrs in page.matching("a") if attrs.get("href", "").startswith("https://wa.me/")]
                 self.assertTrue(whatsapps)
                 for url in whatsapps:
-                    self.assertIn(entry["plaats"], unquote(url))
+                    message = unquote(urlsplit(url).query)
+                    for text in (entry["plaats"], "Postcode en huisnummer:", "Type kachel of haard:", "Laatste veegbeurt (als bekend):"):
+                        self.assertIn(text, message)
                     self.assertEqual(urlsplit(url).path, "/31659012504")
 
             sitemap = ET.parse(output / "sitemap.xml")

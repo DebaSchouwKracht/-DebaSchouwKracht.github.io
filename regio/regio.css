@@ -4,3 +4,9 @@ footer { padding-right: 80px; }
 .nav .brand { min-width: 0; }
 .nav > .btn { flex-shrink: 0; }
 summary, .brand span { overflow-wrap: anywhere; }
+
+.appointment-details {
+  padding-inline-start: 1.25em;
+  text-align: start;
+}
+.appointment-details li + li { margin-top: .45em; }

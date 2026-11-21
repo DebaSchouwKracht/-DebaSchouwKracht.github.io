@@ -76,7 +76,12 @@ def load_regions(path):
 def render_region(template, entry, url):
     place = entry["plaats"]
     title = f"Schoorsteenveger in {place} | Deba Schouwkracht"
-    message = quote(f"Goedendag, ik wil een schoorsteenveegbeurt aanvragen in {place}. Mijn postcode is: ")
+    message = quote(
+        f"Goedendag, ik wil een schoorsteenveegbeurt aanvragen in {place}.\n\n"
+        "Postcode en huisnummer: \n"
+        "Type kachel of haard: \n"
+        "Laatste veegbeurt (als bekend): "
+    )
     schema = {
         "@context": "https://schema.org",
         "@type": "Service",
