@@ -216,8 +216,8 @@
             Plan uw veegbeurt ↗
           </a>
 
-          <a class="btn outline" href="#diensten">
-            Bekijk alle diensten
+          <a class="btn outline" href="#dienstencategorieen">
+            Kies een dienst
           </a>
 
         </div>
@@ -324,34 +324,49 @@
       </div>
 
       <div class="tabs"
+           id="dienstencategorieen"
            role="tablist"
            aria-label="Dienstencategorieën">
 
         <button class="tab active"
+                type="button"
                 role="tab"
+                id="dienst-tab-0"
+                aria-controls="dienst-paneel-0"
                 aria-selected="true"
                 data-tab="0">
-          🧹 Schoorsteen & kachels
+          <span class="tab-full">Schoorsteen &amp; kachels</span>
+          <span class="tab-short" aria-hidden="true">Schoorsteen</span>
         </button>
 
         <button class="tab"
+                type="button"
                 role="tab"
+                id="dienst-tab-1"
+                aria-controls="dienst-paneel-1"
                 aria-selected="false"
+                tabindex="-1"
                 data-tab="1">
-          🏠 Dak & gevel
+          <span class="tab-full">Dak &amp; gevel</span>
+          <span class="tab-short" aria-hidden="true">Dak &amp; gevel</span>
         </button>
 
         <button class="tab"
+                type="button"
                 role="tab"
+                id="dienst-tab-2"
+                aria-controls="dienst-paneel-2"
                 aria-selected="false"
+                tabindex="-1"
                 data-tab="2">
-          ✨ Reiniging & ventilatie
+          <span class="tab-full">Reiniging &amp; ventilatie</span>
+          <span class="tab-short" aria-hidden="true">Reiniging</span>
         </button>
 
       </div>
 
       <!-- SCHOORSTEEN EN KACHELS -->
-      <section class="category-panel" data-category="0">
+      <section class="category-panel" data-category="0" id="dienst-paneel-0" role="tabpanel" aria-labelledby="dienst-tab-0">
 
         <div class="category-intro">
           <img src="assets/schoorsteenvegen.webp"
@@ -452,7 +467,7 @@
 
       <!-- DAK EN GEVEL -->
       <section class="category-panel"
-               data-category="1"
+               data-category="1" id="dienst-paneel-1" role="tabpanel" aria-labelledby="dienst-tab-1"
                hidden>
 
         <div class="category-intro">
@@ -544,7 +559,7 @@
 
       <!-- REINIGING EN VENTILATIE -->
       <section class="category-panel"
-               data-category="2"
+               data-category="2" id="dienst-paneel-2" role="tabpanel" aria-labelledby="dienst-tab-2"
                hidden>
 
         <div class="category-intro">
